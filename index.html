@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOJA WŁASNA BIBLIOTEKA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+</head>
+<body>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="javascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function($){
+            $.scrollTo(0);
+            $('#link1').click(function() { $.scrollTo($('#czm'), 500); });
+            $('#link2').click(function() { $.scrollTo($('#aut'), 500); });
+            $('#link3').click(function() { $.scrollTo($('#info'), 500); });
+        });
+    </script>
+    <header>
+        <div>
+            <h1 class="logo">Moja Własna Biblioteka<i class="icon-book-open"></i></h1>
+        </div>
+        <nav id="topnav">
+            <ul class="menu">
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a id="link1" href="#">Czemu (takie) książki?</a></li>
+                <li><a id="link2" href="#">Autor</a></li>
+                <li><a id="link3" href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section>
+                <div class="categories">
+                    <div class="intro">
+                        <h1>Witaj na mojej półce!</h1>
+                        <p>Półka ta przedstawia książki które przeczytałem osobiście i mogę polecić je z całego serca. Kliknij w interesującą cię książkę aby wyświetlić szczegółowe informację lub kliknij w "Zaproponuj książkę!" aby polecić tytuł autorowi bloga.</p>
+                    </div>
+                    <div class="search-container">
+                        <input type="text" id="bookSearch" placeholder="Szukaj książki...">
+                    </div>
+                    <div class="book-shelf">
+                        <div class="book">
+                            <figure>
+                                <a href="PHP/rozmyslania.php"><img src="img/rozmyslania.jpg" alt="Rozmyślania"></a>
+                            </figure>
+                            <figcaption>Rozmyślania. Do siebie samego</figcaption>
+                        </div>
+                        <div class="book">
+                            <figure>
+                                <a href="PHP/wspomnienia.php"><img src="img/wspomnienia.jpg" alt="Wspomnienia gracza giełdowego"></a>
+                                <figcaption>Wspomnienia gracza giełdowego</figcaption>
+                            </figure>
+                        </div>
+                        <div class="book">
+                            <figure>
+                                <a href="PHP/homo.php"><img src="img/homo-deus.jpg" alt="Homo deus - Krótka historia jutra"></a>
+                                <figcaption>Homo deus. Krótka historia jutra</figcaption>
+                            </figure>
+                        </div>
+                        <div class="book">
+                            <figure>
+                                <a href="PHP/48.php"><img src="img/48-praw.jpg" alt="48 Praw władzy"></a>
+                                <figcaption>48 Praw władzy</figcaption>
+                            </figure>
+                        </div>
+                        <div class="book">
+                            <figure>
+                                <a href="PHP/jak.php"><img src="img/jak-zdobyc.jpg" alt="Jak zdobyć przyjaciół i zjednać sobie ludzi"></a>
+                                <figcaption>Jak zdobyć przyjaciół i zjednać sobie ludzi</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <hr>
+                <div id="why">
+                    <div id="czm" href="#">
+                        <header>
+                            <h1>Czemu (takie) książki?</h1>
+                            <p>Moim ulubionym gatunkiem książek jest literatura faktu, interesuję się też samorozwojem, filozofią życia oraz trochę psychologią. Książki które pojawią się na tym blogu będą dotyczyły głównie  wyżej wymienionych dziedzin. Czytanie uważam za elemęt świata stworzony do rozrywki taki jak między innymi: filmy, gry, seriale. Dlatego z czytania chcę wyciągnąć jakąś wartość a nie zaczytywać się w błachych fikcyjnych historiach.</p>
+                    </div>         
+                    <hr>
+                    <div id="aut" href="#">
+                        <h1>O autorze</h1>
+                        <p>Cześć nazywam się Kacper stworzyłem tego bloga aby pokazać swoje umiejętnośći w projektowaniu stron internetowych. Wykorzystałem tu skrypty php i javascript. Mam nadzieję na pozytywne ocenienie mojej pracy.</p>
+                        <hr>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div id="info" href="#">
+            tel: 123 123 123<br><br>
+            Kacper Brzoznowski &copy; 2025
+        </div>     
+    </footer>
+</body>
+</html>
