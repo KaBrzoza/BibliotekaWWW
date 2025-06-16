@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    background: linear-gradient(#2e0d17, #333030);
+    color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+
+h1.logo {
+    font-size: 44px;
+    font-weight: 700;
+    color: #ddd;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+#topnav {
+    background-color: #333030;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    min-height: 38px;
+    line-height: 200%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #39a5f1;
+}
+
+.scalebook {
+    max-width: 250px;
+    margin: 20px auto;
+    transform: scale(1.1);
+}
+
+.desc {
+    padding: 30px;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 44px;
+    font-weight: 400;
+    color: #39a5f1;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #39a5f1;
+}
+
+.back {
+    background: linear-gradient(#333030, #2e0d17);
+    width: 100%;
+    margin-top: 50px;
+}
+
+#why p {
+    margin-bottom: 50px;
+}
+
+#info {
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#kom {
+    margin: 100px auto 0;
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sticky {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+}
+
+/* Responsywność */
+
+@media (max-width: 768px) {
+    h1.logo {
+        font-size: 30px;
+    }
+
+    .scalebook {
+        transform: scale(1);
+        float: none;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .desc {
+        padding: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        font-size: 18px;
+    }
+}

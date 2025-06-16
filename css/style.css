@@ -1,0 +1,209 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(#2e0d17, #333030);
+    color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1.logo {
+    font-size: 44px;
+    font-weight: 700;
+    color: #ddd;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+#topnav {
+    background-color: #333030;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    min-height: 38px;
+    line-height: 200%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu > li {
+    padding: 5px 10px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #39a5f1;
+}
+
+.categories {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px 50px;
+    text-align: center;
+}
+
+.intro {
+    margin-bottom: 40px;
+}
+
+.book-shelf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.book {
+    transition: 0.2s;
+    text-align: center;
+    max-width: 200px;
+}
+
+.book:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.book a {
+    opacity: 0.9;
+    display: inline-block;
+}
+
+.book a:hover {
+    opacity: 1;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    margin-top: 8px;
+}
+
+.entries {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px 80px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 44px;
+    font-weight: 400;
+    color: #39a5f1;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #39a5f1;
+}
+
+.back {
+    background: linear-gradient(#333030, #2e0d17);
+    width: 100%;
+    margin-top: 50px;
+}
+
+#why, #info, #intro {
+    max-width: 1000px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#why, #intro p {
+    margin-bottom: 50px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.sticky {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+}
+
+.search-container {
+    text-align: center;
+    margin: 40px 20px 20px;
+}
+
+#bookSearch {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+/* Responsywność */
+
+@media (max-width: 768px) {
+    h1.logo {
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .menu {
+        flex-direction: column;
+        font-size: 18px;
+    }
+
+    .book {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .book-shelf {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categories {
+        padding: 0 10px 40px;
+    }
+
+    .entries, #why, #info, #intro {
+        padding: 10px;
+    }
+}
